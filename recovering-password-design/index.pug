@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Announcement Email
+    link(rel='stylesheet' href='./css/index.css')
+  body
+    .announcement__container
+      .announcement__img
+        img(src='https://res.cloudinary.com/dsienryym/image/upload/v1619546816/logo_hs_vnilbl.png' alt='hospital_system')
+      .announcement__card
+        h1.announcement__title Announcement
+        .announcement__message
+          p.announcement__text Hi [USER__NAME__INTERPOLATION],
+          p.announcement__text
+            | A password recovery link was requested from your account.
+          p.announcement__text Please click on the following link to recover your password.
+        .announcement__button-container
+          button.announcement__button Click HERE to View Procedure Details

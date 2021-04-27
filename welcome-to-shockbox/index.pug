@@ -1,33 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Schokbox</title>
-  <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-  <div class="announcement__container">
-    <div class="announcement__img">
-      <img src="https://res.cloudinary.com/dsienryym/image/upload/v1619546816/logo_hs_vnilbl.png" alt="hospital_system">
-    </div>
-    <div class="announcement__card">
-      <h1 class="announcement__title">Announcement</h1>
-      <div class="announcement__message">
-        <p class="announcement__text">Hi [USER__NAME__INTERPOLATION],</p>
-        <p class="announcement__text">
-          Thank you for choosing our services. We look forward to working with you.
-        </p>
-        <p class="announcement__text">
-          The next step will be to click on the link below to choose a
-        </p>
-        <p class="announcement__text"> password and access your account.</p>
-      </div>
-      <div class="announcement__button-container">
-        <button class="announcement__button">Click HERE to View Procedure Details</button>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Welcome to Shockbox
+    link(rel='stylesheet' href='./css/index.css')
+  body
+    .announcement__container
+      .announcement__img
+        img(src='https://res.cloudinary.com/dsienryym/image/upload/v1619546816/logo_hs_vnilbl.png' alt='hospital_system')
+      .announcement__card
+        h1.announcement__title Welcome to Shockbox
+        .announcement__message
+          p.announcement__text Hi [USER__NAME__INTERPOLATION],
+          p.announcement__text
+            | Thank you for choosing our services. We look forward to working with you.
+          p.announcement__text
+            | The next step will be to click on the link below to choose a
+          p.announcement__text  password and access your account.
+        .announcement__button-container
+          button.announcement__button Click HERE to choose your password

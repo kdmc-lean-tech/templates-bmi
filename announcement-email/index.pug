@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Announcement Email
+    link(rel='stylesheet' href='./css/styles.css')
+  body
+    .announcement__container
+      .announcement__img
+        img(src='https://res.cloudinary.com/dsienryym/image/upload/v1619546816/logo_hs_vnilbl.png' alt='hospital_system')
+      .announcement__card
+        h1.announcement__title Announcement
+        .announcement__message
+          p.announcement__text Hi [USER__NAME__INTERPOLATION],
+          p.announcement__text
+            | This is email is to inform you that you have been awarded with an opportunity for
+          p.announcement__text the following procedure:
+          .announcement__info
+            .announcement__procedure-label
+              span.announcement__text Procedure: 
+              span.announcement__text-primary [PROCEDURE__INTERPOLATION]
+            .announcement__total
+              span.announcement__text Total Offers
+              span.announcement__text-primary [TOTAL__OFFERS__INTERPOLATION]
+      .announcement__button-container
+        button.announcement__button Click HERE to View Procedure Details

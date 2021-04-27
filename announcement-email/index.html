@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcement Email</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="announcement__container">
+    <div class="announcement__img">
+      <img src="https://res.cloudinary.com/dsienryym/image/upload/v1619546816/logo_hs_vnilbl.png" alt="hospital_system">
+    </div>
+    <div class="announcement__card">
+      <h1 class="announcement__title">Announcement</h1>
+      <div class="announcement__message">
+        <p class="announcement__text">Hi [USER__NAME__INTERPOLATION],</p>
+        <p class="announcement__text">
+          This is email is to inform you that you have been awarded with an opportunity for
+        </p>
+        <p class="announcement__text">the following procedure:</p>
+        <div class="announcement__info">
+          <div class="announcement__procedure-label">
+            <span class="announcement__text">Procedure: </span>
+            <span class="announcement__text-primary">[PROCEDURE__INTERPOLATION]</span>
+          </div>
+          <div class="announcement__total">
+            <span class="announcement__text">Total Offers</span>
+            <span class="announcement__text-primary">[TOTAL__OFFERS__INTERPOLATION]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="announcement__button-container">
+      <button class="announcement__button">Click HERE to View Procedure Details</button>
+    </div>
+  </div>
+</body>
+</html>
